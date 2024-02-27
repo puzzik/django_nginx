@@ -12,7 +12,5 @@ COPY requirements.txt /app
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
 
-RUN apt install nginx
-
 # Run the application
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
